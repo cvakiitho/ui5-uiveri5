@@ -14,8 +14,8 @@ exports.config = {
       name : './connection/directConnectionProvider',
       binaries: {
         selenium: {
-          version: '3.12',
-          patch: '0',
+          version: '3.141',
+          patch: '59',
           filename: 'selenium-server-standalone',
           url: 'https://selenium-release.storage.googleapis.com/${connectionConfigs.direct.binaries.selenium.version}/' +
           '${connectionConfigs.direct.binaries.selenium.filename}-${connectionConfigs.direct.binaries.selenium.version}.' +
