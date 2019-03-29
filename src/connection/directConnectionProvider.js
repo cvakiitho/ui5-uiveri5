@@ -215,7 +215,7 @@ DirectConnectionProvider.prototype._getLatestVersion = function(binary) {
 
         // resolve latest version
         if(binary.latestVersionUrl) {
-          latestVersion = body;
+          latestVersion = _.trim(body);
         } else if(binary.latestVersionUrlRedirect) {
           // request to the latest version is redirected to the latest release, so get the version from req.path
           var redirectPath = res.req.path.split('/');
